@@ -1,2 +1,4 @@
 *.log
 keys*.pem
+.terraform
+.terraform/lock/hcl
