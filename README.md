@@ -25,6 +25,6 @@ ssh-keygen -t rsa -b 2048 -f ec2-kubernetes
 6. Now, you can use this SSH keypair to connect to your EC2 instances. You'll need to provide the public key (ec2-kubernetes.pub) to your EC2 instances during their creation (file 'terraform.tf).
 
 **output.tf**
-We use the .* syntax to reference all instances created by the aws_instance.large_instance resource. This will return a list of values for each attribute (public_ip, private_ip, private_dns) for all instances created by the resource.
+We use the .* syntax to reference all instances created by the aws_instance.medium_instance resource. This will return a list of values for each attribute (public_ip, private_ip, private_dns) for all instances created by the resource.
 
-For the aws_instance.medium_instance resource, we use indexing ([0] and [1]) to specify each individual instance within the resource.
+For the aws_instance.large_instance resource, we use indexing ([0] and [1]) to specify each individual instance within the resource.
